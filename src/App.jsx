@@ -12,7 +12,7 @@ import Contact from './component/pages/ContactMe'
 
 function App() {
   return (
-    <Router basename="/updated-portfolio">
+    <Router basename="/updated-portfolio/">
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
