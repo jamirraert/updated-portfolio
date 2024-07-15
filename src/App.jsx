@@ -11,15 +11,18 @@ import NotFound from './component/pages/NotFound'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<MainLayout />} >
+    <Route path='/' element={<MainLayout />}>
       <Route index element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/work' element={<Work />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path='about' element={<About />} />
+      <Route path='work' element={<Work />} />
+      <Route path='contact' element={<Contact />} />
+      <Route path='*' element={<NotFound />} />
     </Route>
-  )
-)
+  ), 
+  {
+    basename: '/updated-portfolio', // Add the base path here
+  }
+);
 
 function App() {
   return <RouterProvider router={router} />
