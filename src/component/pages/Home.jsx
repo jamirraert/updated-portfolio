@@ -16,8 +16,6 @@ const Home = () => {
             <Heading flag='h2'>
               Back-end & Front-end Developer
             </Heading>
-
-            <h1>Hello World Goat!</h1>
             
             <div>
               <a href="https://web.facebook.com/jamirraert/" 
