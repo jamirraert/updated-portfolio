@@ -47,12 +47,12 @@ const Header = () => {
             style={{transform: isOpen ? 'rotate(-45deg) translate(7px, -6px)' : ''}}></div>  
         </div>
         <nav className={`opacity-[0.9] ${isOpen ? 'visible':'hidden'}`}>
-          <div className={`float-left sm:float-none sm:w-[100%] sm:p-6 sm:h-auto w-[50%] sm:transform-none h-screen flex flex-col justify-center items-center
+          <div className={`float-left sm:float-none sm:w-[100%] sm:hidden md:hidden h-screen sm:p-6 w-[50%] sm:transform-none flex flex-col justify-center items-center
             flex-wrap overflow-hidden bg-444 transition-all duration-500 ease-out`}
             style={{transform: transformBranding}}>
             <div style={{backgroundImage: `url(${Portrait})`}} className='portrait'></div>
           </div>
-          <ul className='float-right sm:float-none w-[50%] sm:w-[100%] sm:h-full h-screen flex flex-col flex-wrap items-center text-white
+          <ul className='float-right sm:float-none w-[50%] sm:w-[100%] h-screen flex flex-col flex-wrap items-center text-white
             justify-center overflow-hidden m-[0] p-[0] bg-3737 lis-none transition-all duration-500 ease-out'
             style={{transform: transformNav}}>
               <li className="transition-all duration 500 ease-out delay-[0.1s] hover:text-primary"

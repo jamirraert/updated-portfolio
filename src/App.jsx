@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     </Route>
   ), 
   {
-    basename: '/updated-portfolio', // Add the base path here
+    basename: '/updated-portfolio',
   }
 );
 

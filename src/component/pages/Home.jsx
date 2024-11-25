@@ -1,6 +1,7 @@
 import IMG from '../../assets/images/background.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Heading from '../common/Heading';
+import CV from '../../assets/cv/Christian_Fernan_Baquiano.pdf'
 
 const Home = () => {
 
@@ -20,13 +21,21 @@ const Home = () => {
             <div>
               <a href="https://web.facebook.com/jamirraert/" 
               target='__blank'
-              className='hover:text-primary'> 
-                <FontAwesomeIcon size='2xl' className='mr-[0.9rem]' icon={['fab', 'facebook']} />
+              title='Visit Facebook'
+              className='hover:text-primary mr-[0.9rem]'> 
+                <FontAwesomeIcon size='2xl' icon={['fab', 'facebook']} />
               </a>
               <a href="https://www.linkedin.com/in/christian-fernan-baquiano-a81285281/" 
               target='__blank'
-              className='hover:text-primary'>
+              title='Visit Linkedin'
+              className='hover:text-primary mr-[0.9rem]'>
                 <FontAwesomeIcon size='2xl' icon={['fab', 'linkedin']} />
+              </a>
+              <a href={CV} 
+              title='Download CV'
+              download='CFBaquiano_CV.pdf'
+              className='hover:text-primary mr-[0.9rem]'>
+                <FontAwesomeIcon size='2xl' icon={['fas', 'download']} />
               </a>
             </div>
           </div>

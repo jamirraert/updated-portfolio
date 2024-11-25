@@ -7,14 +7,14 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Work = () => {
   return (
-    <div className="p-[4rem] bg-444 h-screen line-height-[1.5] text-white sm:h-auto md:h-auto">
+    <div className="p-[4rem] bg-444 line-height-[1.5] text-white sm:h-auto md:h-auto">
       <Heading flag='h1' className='!mt-[1vh] sm:text-center'>
         My <span className="text-primary">Work</span>
       </Heading>
       <Heading flag='h2' className='sm:text-center'>
         Check out some of my projects...
       </Heading>
-      <div className="grid gap-[0.7rem] grid-cols-3">
+      <div className="grid gap-[0.7rem] grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
         <div>
           <a href="#" target="__blank" rel="noopener noreferrer">
             <img src={img1} alt="Image 1"  className="border-[3px] border-solid border-primary w-full"/>

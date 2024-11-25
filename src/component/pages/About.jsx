@@ -3,7 +3,7 @@ import IMG from "../../assets/images/chan2.jpg"
 
 const About = () => {
   return (
-    <div className="p-[4rem] bg-444 h-screen line-height-[1.5] text-white sm:h-auto md:h-auto">
+    <div className="p-[4rem] bg-444 line-height-[1.5] text-white sm:h-auto md:h-auto">
       <Heading flag='h1' className='!mt-[1vh] sm:text-center'>
         About <span className="text-primary">Me</span>
       </Heading>
